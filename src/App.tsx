@@ -23,6 +23,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
 import ChatScreen from './screens/ChatScreen';
+import ChatListScreen from './screens/ChatListScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import BackupScreen from './screens/BackupScreen';
@@ -79,8 +80,8 @@ function MainTabNavigator() {
         options={{ title: 'Family' }}
       />
       <Tab.Screen 
-        name="Chat" 
-        component={ChatScreen}
+        name="ChatList" 
+        component={ChatListScreen}
         options={{ title: 'Messages' }}
       />
       <Tab.Screen 
